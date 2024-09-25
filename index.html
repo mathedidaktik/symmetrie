@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"  content="width=device-width, initial-scale=1.0">
+    <title>Symmetrische Mathematik</title>
+   
+    <link rel="stylesheet" href="css/style.css" >
+    <script src="js/script.js" defer></script>
+    <script src="js/buttons.js" defer></script>
+</head>
+<body>
+    <div class="device_notice">Bitte das Gerät in eine horizontale Stellung drehen. Danke!</div>
+    <h1 class="title">Symmetrien</h1>
+    <div class="menu__left">
+        <p>Achsensymmetrie</p>
+        <div class="x option"><img src="img/xsymmetry.png"></div>
+        <div class="y option"><img src="img/ysmmmetry.png"></div>
+        <!-- <div class="xandy option"><img src="img/xundyAchse.png"></div> -->
+        <div class="d1 option"><img src="img/yxsymmetry.png"></div>
+        <div class="d2 option"><img src="img/xysymmetry.png"></div>
+        <!-- <div class="d1d2 option"><img src="img/xyundyxAchse.png"></div> -->
+
+        <p>Drehsymmetrie</p>
+        <div class="rotation">
+            <div class="two option">2</div>
+            <div class="three option">3</div>
+            <div class="four option">4</div>
+            <div class="five option">5</div>
+            <div class="six option">6</div>
+            <div class="ten option">10</div>
+        </div>
+
+        <p>Verschiebungssymmetrie</p>
+        <div class="displacementFour option"><img src="img/displacement.png"></div>
+        
+    </div>
+
+    <div class="help hide">
+        
+            <h1 class="help__title">Hilfe</h1>
+
+            <div class="help__con">
+                <div class="help__img">
+                    <img src="img/help_symmetry.png" >
+                </div>
+                <div class="help__text">Mit diesen Button kannst du spiegelsymmetrische Zeichnungen erschaffen.
+                    Die graue Linie zeigt dir an, wo die Spiegelachse liegt.</div>
+            </div>
+            <div class="help__con">
+                <div class="help__img">
+                    <img src="img/help_rotation.png" >
+                </div>
+                <div class="help__text">Mit diesen Button kannst du drehsymmetrische Zeichnungen erschaffen.
+                    Die Zahl gibt an, wie oft dein Grundelement um den Mittelpunkt gedreht wird.
+                </div>
+            </div>
+
+            <div class="help__con">
+                <div class="help__img">
+                    <img src="img/displacement.png" >
+                </div>
+                <div class="help__text">Mit diesem Button kannst du Bandornamente erschaffen.
+                </div>
+            </div>
+
+
+            <div class="help__con">
+                <div class="help__img">
+                    <img src="img/help_colors.png" >
+                </div>
+                <div class="help__text">Mit diesen Button kannst du eine Farbe zum Zeichnen auswählen.
+                </div>
+            </div>
+
+            <div class="help__con">
+                <div class="help__img">
+                    <img src="img/undo.png" >
+                </div>
+                <div class="help__text">Letzten Strich löschen.
+                </div>
+            </div>
+
+            <div class="help__con">
+                <div class="help__img">
+                    <img src="img/redo.png" >
+                </div>
+                <div class="help__text">Letzten gelöschten Strich zurückholen. 
+                </div>
+            </div>
+
+            <div class="help__con">
+                <div class="help__img">
+                    <img src="img/clear.png" >
+                </div>
+                <div class="help__text">Ganze Zeichnung löschen.
+                </div>
+            </div>
+
+            <div class="help__con">
+                <div class="help__img">
+                    <img src="img/grid.png" >
+                </div>
+                <div class="help__text">Raster zur Hilfe anzeigen.  
+                </div>
+            </div>
+
+            <div class="help__con">
+                <div class="help__img">
+                    <img src="img/pen.png" >
+                </div>
+                <div class="help__text">Mit diesem Button kannst du etwas auf deiner Zeichnung markieren.
+                    Alles, was du mit diesem Stift zeichnest wird nicht gedreht, gespiegelt oder verschoben.
+                </div>
+            </div>
+
+            <div class="help__con">
+                <div class="help__img">
+                    <img src="img/download.png" >
+                </div>
+                <div class="help__text">Zeichnung herunterladen.
+                </div>
+            </div>
+
+            <div class="help__close"></div>
+</div>
+    <div class="canvasBox">
+        <canvas class="main"></canvas>
+        <div class="grid"></div>
+        <canvas class="type"></canvas>
+        <canvas class="mirror"></canvas>
+        <canvas class="mirror"></canvas>
+        <canvas class="mirror"></canvas>
+        <canvas class="mirror"></canvas>
+        <canvas class="mirror"></canvas>
+        <canvas class="mirror"></canvas>
+        <canvas class="mirror"></canvas>
+        <canvas class="mirror"></canvas>
+        <canvas class="mirror"></canvas>
+        <canvas class="mirror"></canvas>
+        <div class="background"></div>
+    </div>
+
+    <div class="menu__right">
+        <p>Farbe</p>
+        <div class="colors">
+            <div class="red"></div>
+            <div class="yellow"></div>
+            <div class="green"></div>
+            <div class="blue"></div>
+            <div class="black color__active"></div>
+        </div>
+        <div class="undoRedoCon">
+        <div class="undo undoDesktop option"><img src="img/undo.png"></div>
+        <div class="forward forwardDesktop option"><img src="img/redo.png"></div>
+        </div>
+        <div class="clear option"><img src="img/clear.png"></div>
+        <div class="gridButton option"><img src="img/grid.png"></div>
+        <div class="normal option active"><img src="img/pen.png"></div>
+        <div class="save option"><img src="img/download.png"></div>
+        <div class="helpOpen option"><img src="img/help.png"></div>
+    </div>
+
+
+</body>
+</html>
